@@ -14,7 +14,6 @@ public class main{
             if(guesses == 0){
                 System.out.println("Enter your guess: ");
             }
-			String guess = reader.nextLine();
 			if(isWon){
 			    System.out.print("You Won! Go Again? ");
 			    String again = reader.nextLine();
@@ -26,6 +25,7 @@ public class main{
 					break;
 				}
 			}
+			String guess = reader.nextLine();
 			if(guess.length() != 5) {
                 System.out.println("Enter a  letter long word instead");
 				continue;
