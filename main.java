@@ -7,8 +7,8 @@ public class main{
     public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		String ans = anslist[rand.nextInt(anslist.length)];
-		//String ans = "irate";
-		int guesses= 0;
+		ans = "irate";
+		int guesses= 1;
 		
 		while(true) {
             if(guesses == 0){
@@ -20,6 +20,7 @@ public class main{
 				if(again.equals("y")) {
 					guesses = 0;
                     ans = anslist[rand.nextInt(anslist.length)];
+                    isWon = false;
                     continue;
 				}else {
 					break;
@@ -34,7 +35,7 @@ public class main{
 				System.out.print(" num guesses: "+ guesses);
 				System.out.println();
 			}
-			if(guesses == 6) {
+			if(guesses == 6 && !isWon) {
 			    System.out.println("You lose! The answer was " + ans);
 				System.out.print("Go Again? y/n ");
 				String again = reader.nextLine();
