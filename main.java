@@ -28,7 +28,7 @@ public class main{
 			}
 			String guess = reader.nextLine();
 			if(guess.length() != 5) {
-                System.out.println("Enter a  letter long word instead");
+                System.out.println("Enter a " + 5 + " letter long word instead");
 				continue;
 			}else {
 				guessCheck(ans, guess);
