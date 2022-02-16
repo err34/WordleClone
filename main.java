@@ -7,11 +7,11 @@ public class main{
     public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		String ans = anslist[rand.nextInt(anslist.length)];
-		ans = "irate";
+		//ans = "irate";
 		int guesses= 1;
 		
 		while(true) {
-            if(guesses == 0){
+            if(guesses == 1){
                 System.out.println("Enter your guess: ");
             }
 			if(isWon){
